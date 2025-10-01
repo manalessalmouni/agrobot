@@ -22,7 +22,7 @@ Elle combine **Machine Learning** et **connaissances agronomiques** pour fournir
 ## 🧠 Comment ça marche ?
 
 1. L’utilisateur saisit les paramètres du sol (N, P, K, température, humidité, pH, pluviométrie).  
-2. Les données sont passées au modèle ML (`model.pkl`), entraîné sur le dataset [Crop Recommendation](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset).  
+2. Les données sont passées au modèle ML (`model.pkl`), entraîné sur deux datasets (https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset).  
 3. Le modèle calcule la **probabilité d’adaptation** de chaque culture.  
 4. Des **règles agronomiques** ajustent ces scores :
    - Boost si correspondance avec les préférences marché  

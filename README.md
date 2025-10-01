@@ -4,6 +4,10 @@ AGROBOT est une application web intelligente qui recommande les **3 cultures agr
 Elle combine **Machine Learning** et **connaissances agronomiques** pour fournir des résultats personnalisés, avec conseils et alertes.
 
 ---
+## 🎥 Demo
+
+[![Watch the demo](https://img.youtube.com/vi/yCD1shsruVM/0.jpg)](https://youtu.be/yCD1shsruVM)
+
 
 ## 🚀 Fonctionnalités
 

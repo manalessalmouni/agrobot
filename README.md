@@ -19,12 +19,17 @@ Elle combine **Machine Learning** et **connaissances agronomiques** pour fournir
 - 📄 **Export PDF** des résultats.  
 
 ---
+## 🧠 Comment ça marche ?
 
-## 🖼️ Aperçu
-
-### Page d’accueil
-![index](docs/screens/index.png)
-
-### Résultats avec recommandations
-![results](docs/screens/results.png)
-
+1. L’utilisateur saisit les paramètres du sol (N, P, K, température, humidité, pH, pluviométrie).  
+2. Les données sont passées au modèle ML (`model.pkl`), entraîné sur le dataset [Crop Recommendation](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset).  
+3. Le modèle calcule la **probabilité d’adaptation** de chaque culture.  
+4. Des **règles agronomiques** ajustent ces scores :
+   - Boost si correspondance avec les préférences marché  
+   - Pénalité si même famille botanique que la culture précédente  
+5. Le système retourne le **Top 3 cultures** avec :
+   - Image  
+   - Score de confiance  
+   - Groupe (fruit, légumineuse, céréale, etc.)  
+   - Maladies/parasites fréquents  
+   - Conseils agronomiques personnalisés  
